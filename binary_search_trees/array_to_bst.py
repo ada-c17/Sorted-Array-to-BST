@@ -8,13 +8,10 @@ class TreeNode:
         if self.val < current.val:
             if not current.left:
                 current.left = self
-                print(f'New Left: {current.left.val}')
             current = current.left
-            print(f'New Current: {current.val}')
         else:
             if not current.right:
                 current.right = self
-                print(f'Right: {current.right.val}')
             current = current.right
 
 def arr_to_bst(arr):
@@ -25,9 +22,8 @@ def arr_to_bst(arr):
     if not arr:
         return None
     else:
-        mid = len(arr)//2 
-        middle = arr[mid]   
-        root = TreeNode(middle)
+        mid = len(arr)//2
+        root = TreeNode(arr[mid])
         current = root
     
         i = 0
