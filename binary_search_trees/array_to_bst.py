@@ -82,6 +82,8 @@ array = [1, 2, 3, 4, 5]
 
 middle_node = arr_to_bst(array)
 
+print(is_bst(middle_node))
 print(is_balanced_tree(middle_node))
+
 
 
