@@ -10,14 +10,14 @@ def arr_to_bst(arr):
         Balanced Binary Search Tree using the elements in the array.
         Return the root of the Binary Search Tree.
     """
-    def convert(arr, l, r):
+    def convert(l, r):
         if l > r:
             return None
     
         m = l + (r - l) // 2
         root = TreeNode(arr[m])
-        root.left = convert(arr, l, m - 1)
-        root.right = convert(arr, m + 1, r)
+        root.left = convert(l, m - 1)
+        root.right = convert(m + 1, r)
         return root
 
-    return convert(arr, 0, len(arr) - 1)
+    return convert(0, len(arr) - 1)
