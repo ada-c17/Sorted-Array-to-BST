@@ -20,7 +20,7 @@ It is recommended to break the problem down recursively by first setting the roo
 
 ## Getting Started
 
-As usual with a python project, create a virtual environment:
+As usual with a python project, create a virtual environment`:
 
 ```
 python3 -m venv venv
