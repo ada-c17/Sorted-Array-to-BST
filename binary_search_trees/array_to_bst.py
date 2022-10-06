@@ -17,4 +17,12 @@ def arr_to_bst(arr):
     # that element becomes the left child node
     # if that element is smaller or equal to the root:
     # that element becomes the right child node
+
+    #helper function to handle recursion
+    # pick middle element in list
+    # set middle element to root
+    # grab left list
+    # grab right list
+    #assign left side to recersive call of left list (root.left)
+
     pass
