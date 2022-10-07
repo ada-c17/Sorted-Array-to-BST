@@ -17,12 +17,13 @@ def arr_to_bst(arr):
     # get the middle index, set as root
     mid_index = len(arr)//2
     root = TreeNode(arr[mid_index])
-    # while there is something to the right of the index
-        # set nodes for the right
+    # while there is something to the left of the index
+        # set nodes for the left
+        # the return None on line 16 stops this
     root.left = arr_to_bst(arr[:mid_index])
     
     # while there is something to the right of the index
-        # set nodes for the left
+        # set nodes for the right
     root.right = arr_to_bst(arr[mid_index+1:])
 
     return root
