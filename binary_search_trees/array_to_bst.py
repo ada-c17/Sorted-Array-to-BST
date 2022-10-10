@@ -25,7 +25,7 @@ def arr_to_bst(arr):
       left_list = arr[:mid_root_index]
       right_list = arr[mid_root_index + 1:]
 
-      #recurisvely calling arr_to_bst until list is len of 1, when we have leaf nodes
+      #recurisvely calling arr_to_bst until we have leaf nodes
       root.left = arr_to_bst(left_list)
       root.right = arr_to_bst(right_list)
       return root
