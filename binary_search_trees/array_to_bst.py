@@ -10,4 +10,13 @@ def arr_to_bst(arr):
         Balanced Binary Search Tree using the elements in the array.
         Return the root of the Binary Search Tree.
     """
-    pass
+    if not arr:
+        return
+
+    midpoint = len(arr) // 2
+
+    node = TreeNode(value=arr[midpoint])
+    node.left = arr_to_bst(arr[:midpoint])
+    node.right = arr_to_bst(arr[midpoint+1:])
+
+    return node
