@@ -14,13 +14,7 @@ def arr_to_bst(arr):
         return None
 
     # Find middle of array and set as root node
-    if len(arr) % 2 == 1:
-        root_index = (len(arr) - 1) // 2
-        root_node = TreeNode(arr[root_index])
-    else:
-        root_node = TreeNode(arr[len(arr) // 2])
+    root_index = len(arr) // 2
+    root_node = TreeNode(arr[root_index])
 
     return root_node.val
-
-
-print(arr_to_bst([1, 2, 3, 4]))
