@@ -10,13 +10,11 @@ def arr_to_bst(arr):
         Balanced Binary Search Tree using the elements in the array.
         Return the root of the Binary Search Tree.
     """
-    #helper function to handle tree build recursively ✅
     # empty list return None ✅
     # pick middle element in list ✅
     # set middle element to root ✅
     # grab left list ✅
     # grab right list ✅
-
 
     #assign left side to recersive call of left list (root.left)
     if not arr:
@@ -32,10 +30,3 @@ def arr_to_bst(arr):
     # indexing to consider everything starting at one greater than the middle, recursively
     root.right = arr_to_bst(arr[middle+1:])
     return root
-    
-    
-def tree_helper(node):
-    if not node:
-        return
-    tree_helper(node.left)
-    tree_helper(node.right)
