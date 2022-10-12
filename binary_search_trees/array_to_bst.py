@@ -17,4 +17,12 @@ def arr_to_bst(arr):
     root_index = len(arr) // 2
     root_node = TreeNode(arr[root_index])
 
-    return root_node.val
+    # Create left and right subtrees
+    root_node.left = arr_to_bst(arr[:root_index])
+    root_node.right = arr_to_bst(arr[root_index+1:])
+
+    return root_node
+
+# Notes:
+# If middle element in a sorted array is the root of the tree, than the first half of the array
+# can go to the left, and the second half to the right, and the tree will be balanced.
