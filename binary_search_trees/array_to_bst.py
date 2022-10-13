@@ -15,9 +15,6 @@ def arr_to_bst(arr):
     if not arr:
         return None
     
-    if len(arr) == 1:
-        return arr[0]
-    
     mid = len(arr)//2
     root = TreeNode(arr[mid])
     root.left = arr_to_bst(arr[:mid])
