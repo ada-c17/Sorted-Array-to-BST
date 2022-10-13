@@ -16,6 +16,12 @@ def arr_to_bst(arr):
     mid_point = len(arr)//2
 
     root = TreeNode(arr[mid_point])
+
+    # while there is something to the left of this point, set nodes for the left
     root.left = arr_to_bst(arr[:mid_point])
+
+    # while there is something to the right of this point, set nodes for the right
     root.right = arr_to_bst(arr[mid_point + 1:])
+
+    
     return root
