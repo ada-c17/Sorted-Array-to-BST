@@ -12,3 +12,10 @@ def arr_to_bst(arr):
     """
     if not arr:
         return None
+
+    mid_point = len(arr)//2
+
+    root = TreeNode(arr[mid_point])
+    root.left = arr_to_bst(arr[:mid_point])
+    root.right = arr_to_bst(arr[mid_point + 1:])
+    return root
