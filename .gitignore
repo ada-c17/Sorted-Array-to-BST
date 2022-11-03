@@ -142,3 +142,9 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+.idea/misc.xml
+.idea/modules.xml
+.idea/Sorted-Array-to-BST.iml
+.idea/vcs.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/.gitignore
