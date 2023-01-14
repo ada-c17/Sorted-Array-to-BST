@@ -43,15 +43,7 @@ def arr_to_bst(arr):
            
 
 
-        def  printFunc(self, current_node):     
-            if self.root !=None:
-             self.printTree(self.root)
-
-        def printTree( self, current_node):
-            if current_node !=None:
-                self.printTree(current_node.left) 
-                print ( str(current_node.value))
-                self.printTree(current_node.rightt)       
+   
 
 
 
