@@ -37,17 +37,17 @@ def arr_to_bst(arr):
 
 
 
-# create helper function to print result 
-def preOrderNodes(current_node): 
-    if not current_node: 
-        return 
-    print(current_node.val)
-    preOrderNodes(current_node.left)
-    preOrderNodes(current_node.right)
+# # create helper function to print result 
+# def preOrderNodes(current_node): 
+#     if not current_node: 
+#         return 
+#     print(current_node.val)
+#     preOrderNodes(current_node.left)
+#     preOrderNodes(current_node.right)
 
 
-arr = arr_to_bst([5, 10, 15, 20, 25, 30, 35, 40, 45])
-preOrderNodes(arr)
+# arr = arr_to_bst([5, 10, 15, 20, 25, 30, 35, 40, 45])
+# preOrderNodes(arr)
 
 
 
